@@ -1,0 +1,128 @@
+/* Γενικές Ρυθμίσεις */
+.blog-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.post-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#allagi gia test
+
+.post-date {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Διασφάλιση ότι το περιεχόμενο δεν κόβεται */
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: visible;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Αν το άρθρο δεν βρεθεί */
+.not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+  margin-top: 50px;
+}
+
+/* Αφαιρούμε το fixed footer για να μην καλύπτει κείμενο */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Ορίζει ότι το body και το root θα καταλαμβάνουν όλο το ύψος */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Χρησιμοποιούμε flexbox για να κρατήσουμε το footer στο κάτω μέρος */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Το main περιέχει το περιεχόμενο της σελίδας και επεκτείνεται για να σπρώξει το footer προς τα κάτω */
+main {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+/* Σταθερό footer στο κάτω μέρος */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+
+
+/* Στυλ για το κουμπί επιστροφής */
+.back-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.card-body {
+  height: auto; /* Για να επιτρέπεται στο περιεχόμενο να τεντώνεται */
+  overflow: visible; /* Για να εμφανίζεται όλο το περιεχόμενο */
+}
+
+.post-video {
+  width: 100%;   /* Κάνει το πλαίσιο του βίντεο να είναι όσο το δυνατόν μεγαλύτερο */
+  max-width: 100%;  /* Κάνει το βίντεο να παίρνει όλο το πλάτος του διαθέσιμου χώρου */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post-video iframe {
+  width: 100%;
+  height: 500px;  /* Μπορείς να ρυθμίσεις το ύψος ανάλογα με το τι θες */
+}

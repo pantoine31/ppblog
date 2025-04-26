@@ -1,0 +1,99 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #ccc;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .timeline-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-date {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .timeline-content {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-description {
+    font-size: 14px;
+    color: #666;
+    max-width: 300px;
+  }
+  
+  .pdf-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pdf-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .pdf-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .pdf-item {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pdf-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .pdf-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
