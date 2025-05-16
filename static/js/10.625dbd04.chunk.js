@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkppblog=self.webpackChunkppblog||[]).push([[10],{7010:(p,e,b)=>{p.exports=b.p+"static/media/5.d70e799442c27f3b2bb0.md"}}]);
