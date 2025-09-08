@@ -1,99 +1,232 @@
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    padding: 50px 0;
-  }
-  
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    background: #ccc;
-    transform: translateX(-50%);
-  }
-  
-  .timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 250px;
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .timeline-circle {
-    width: 20px;
-    height: 20px;
-    background-color: #007bff;
-    border-radius: 50%;
-    position: relative;
-    z-index: 10;
-    margin-bottom: 10px;
-  }
-  
-  .timeline-date {
-    font-size: 14px;
-    color: #555;
-    margin-top: 5px;
-  }
-  
-  .timeline-content {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .timeline-description {
-    font-size: 14px;
-    color: #666;
-    max-width: 300px;
-  }
-  
-  .pdf-section {
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    padding: 30px;
-    background-color: #f4f4f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pdf-section h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
+.pro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pro-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  color: #222;
+}
+
+.pdf-section {
+  max-width: 900px;
+  margin: 60px auto 80px;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #d9e2ff 100%);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.15);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pdf-section h2 {
+  font-size: 28px;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.pdf-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.pdf-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  min-width: 260px;
+  max-width: 280px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-item:hover {
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  border-color: #007bff;
+  transform: translateY(-6px);
+}
+
+.pdf-item a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #004080;
+  text-decoration: none;
+  padding: 10px 0;
+  width: 100%;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.pdf-item a:hover {
+  color: #0059b3;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
   .pdf-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 18px;
   }
-  
+
   .pdf-item {
-    background-color: white;
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    max-width: 100%;
   }
-  
-  .pdf-item:hover {
-    transform: scale(1.05);
+}
+
+
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #ccc;
+}
+
+/* kathe item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+
+.timeline-box {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+
+.timeline-circle {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 0 4px #f4f4f4;
+}
+
+.timeline-content {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.timeline-description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
   }
-  
-  .pdf-item a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 60px;
+    text-align: left !important;
   }
-  
+
+  .timeline-circle {
+    left: 20px;
+  }
+}
+.cv-section {
+  max-width: 700px;
+  margin: 60px auto 100px;
+  padding: 35px 30px;
+  background: #e8f0fe;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cv-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.cv-section p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.cv-download-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.cv-download-btn:hover {
+  background-color: #0056b3;
+}

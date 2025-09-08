@@ -1,9 +1,10 @@
 /* Main Container */
+
 .about-container {
   max-width: 900px;
   margin: 50px auto;
   padding: 40px;
-  background: linear-gradient(to right, #f9f9fb, #e0e0e0); /* Gradient background */
+  background: linear-gradient(to right, #f9f9fb, #e0e0e0); 
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -18,11 +19,11 @@
 }
 
 .about-header img {
-  width: 400px; /* Μικρότερη εικόνα */
+  width: 400px; 
   height: 300px;
-  border-radius: 50%; /* Στρογγυλές γωνίες */
+  border-radius: 50%; 
   object-fit: cover;
-  border: 4px solid #fff; /* Λευκό περίγραμμα γύρω από την εικόνα */
+  border: 4px solid #fff; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 

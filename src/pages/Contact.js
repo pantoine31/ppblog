@@ -20,24 +20,24 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Επαλήθευση ότι όλα τα πεδία είναι συμπληρωμένα
+    // elegxos oti i forma exei simplirothei
     if (!formData.name || !formData.email || !formData.message) {
       setStatus('Παρακαλώ συμπληρώστε όλα τα πεδία.');
       return;
     }
 
-    // Αποστολή μέσω του EmailJS
+    // xrisimopoiw to emailJS
     const templateParams = {
       from_name: formData.name,
-      from_email: formData.email,  // Το email του χρήστη
+      from_email: formData.email,  
       message: formData.message,
     };
 
     emailjs.send(
-      'service_tw9op62',  // Το Service ID που έχεις στο EmailJS
-      'template_ve0sonb', // Το Template ID
-      templateParams,     // Τα δεδομένα που θα αποσταλούν
-      '5yW-676R0nXxFMjBI'      // Το User ID που έχεις στο EmailJS
+      'service_tw9op62',  //  Service ID EmailJS
+      'template_ve0sonb', //  Template ID
+      templateParams,     // data poy stelnw
+      '5yW-676R0nXxFMjBI'      //  User ID EmailJS
     )
     .then(
       (result) => {
@@ -54,9 +54,6 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <style>
-        {`
-          /* Προσαρμοσμένο CSS */
-        `}
       </style>
 
       <div className="contact-header">
@@ -99,7 +96,7 @@ const Contact = () => {
     </div>
     
 
-      {/* Φόρμα Επικοινωνίας */}
+      {/* contact form */}
       <div className="contact-form">
         <h3>Στείλτε μου ένα μήνυμα</h3>
         <form onSubmit={handleSubmit}>

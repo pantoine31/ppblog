@@ -1,4 +1,6 @@
 import React from 'react';
+import VisitCounter from "./VisitCounter"; 
+
 
 const Footer = () => {
   return (
@@ -23,6 +25,9 @@ const Footer = () => {
           </a>
         </p>
       </div>
+      <img src="https://hits.sh/pantoine31.github.io/ppblog.svg?style=flat&label=Total%20Visitors%20Until%20Now" alt="visits" />
+
+
     </footer>
   );
 };

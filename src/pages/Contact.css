@@ -1,5 +1,4 @@
 
-
     body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,7 +9,7 @@
     }
 
   .contact-container {
-    background: #6a0dad; /* Απλό μωβ */
+    background: #6a0dad; 
     color: #fff;
     padding: 40px;
     border-radius: 12px;

@@ -1,4 +1,40 @@
-/* Γενικές Ρυθμίσεις */
+
+.visitor-counter-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.visitor-counter-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.visitor-counter {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.visitor-counter-box {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.visitor-counter-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
 .blog-container {
   max-width: 900px;
   margin: 50px auto;
@@ -23,7 +59,7 @@
   margin-bottom: 10px;
 }
 
-/* Διασφάλιση ότι το περιεχόμενο δεν κόβεται */
+
 .post-content {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -35,7 +71,7 @@
   height: auto;
 }
 
-/* Αν το άρθρο δεν βρεθεί */
+/* case to article na min vrethei */
 .not-found {
   text-align: center;
   font-size: 1.5rem;
@@ -43,7 +79,7 @@
   margin-top: 50px;
 }
 
-/* Αφαιρούμε το fixed footer για να μην καλύπτει κείμενο */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -60,27 +96,27 @@ html, body {
   flex: 1;
 }
 
-/* Ορίζει ότι το body και το root θα καταλαμβάνουν όλο το ύψος */
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Χρησιμοποιούμε flexbox για να κρατήσουμε το footer στο κάτω μέρος */
+
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Το main περιέχει το περιεχόμενο της σελίδας και επεκτείνεται για να σπρώξει το footer προς τα κάτω */
+
 main {
   flex: 1;
   padding-bottom: 20px;
 }
 
-/* Σταθερό footer στο κάτω μέρος */
+
 .footer {
   background: #222;
   color: white;
@@ -91,7 +127,7 @@ main {
 
 
 
-/* Στυλ για το κουμπί επιστροφής */
+
 .back-button {
   display: block;
   width: fit-content;
@@ -111,18 +147,18 @@ main {
 }
 
 .card-body {
-  height: auto; /* Για να επιτρέπεται στο περιεχόμενο να τεντώνεται */
-  overflow: visible; /* Για να εμφανίζεται όλο το περιεχόμενο */
+  height: auto; 
+  overflow: visible; 
 }
 
 .post-video {
-  width: 100%;   /* Κάνει το πλαίσιο του βίντεο να είναι όσο το δυνατόν μεγαλύτερο */
-  max-width: 100%;  /* Κάνει το βίντεο να παίρνει όλο το πλάτος του διαθέσιμου χώρου */
+  width: 100%;   
+  max-width: 100%;  
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .post-video iframe {
   width: 100%;
-  height: 500px;  /* Μπορείς να ρυθμίσεις το ύψος ανάλογα με το τι θες */
+  height: 500px;  
 }

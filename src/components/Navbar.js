@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/LOGO.png';
+
 
 const Navbar = () => {
   return (
@@ -7,7 +9,8 @@ const Navbar = () => {
       <div className="container">
         {/* logo here*/}
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <img src="/imgs/LOGO.png" alt="Logo" style={{ width: '40px', height: '40px', marginRight: '10px' }} />
+          <img src={logo} alt="Logo" style={{ width: '40px', height: '40px', marginRight: '10px' }} />
+
           The Pantoine's Project
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

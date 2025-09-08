@@ -1,12 +1,21 @@
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
 .blog-card {
   background: #fff;
   padding: 15px;
   border-radius: 12px;
   transition: transform 0.2s ease-in-out;
-  position: relative; /* Απαιτείται για απόλυτη τοποθέτηση του κουμπιού */
-  height: 100%; /* Όλες οι κάρτες να έχουν το ίδιο ύψος */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
+ 
 .blog-card:hover {
   transform: translateY(-5px);
 }
@@ -25,14 +34,6 @@
   color: #333;
 }
 
-.blog-excerpt {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #666;
-  margin-top: 10px;
-  margin-bottom: 66px;
-}
-
 .blog-date {
   font-size: 14px;
   color: gray;
@@ -41,13 +42,25 @@
   font-style: italic;
 }
 
+.blog-excerpt {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 66px;
+}
+
 .card-body {
-  display: block;
+  flex: 1;
 }
 
 .btn-primary {
   position: absolute;
-  bottom: 15px; /* Τοποθετεί το κουμπί στο κάτω μέρος της κάρτας */
+  bottom: 15px;
   left: 50%;
-  transform: translateX(-50%); /* Κεντράρει το κουμπί */
+  transform: translateX(-50%);
+}
+
+.row > .col-md-4 {
+  display: flex;
 }
