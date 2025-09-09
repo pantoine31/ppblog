@@ -2,19 +2,16 @@ import React from "react";
 import "../pages/Pro.css";
 
 const experiences = [
-<<<<<<< HEAD
 
-  {
-=======
     {
->>>>>>> 00a6e0a (WIP: my changes)
+
     title: "Junior Frontend Engineer",
     company: "NETCOMPANY",
     location: "13 Fragkokklisias str., 15125, Maroussi, Athens, GREECE",
     date: "Sept 2025 – NOW ",
     description:"Junior Frontend Developer with experience in building responsive React applications. Skilled in JavaScript, HTML, CSS, and state management with Redux. Collaborates well with teams to create user-friendly interfaces and writes clean, maintainable code. Familiar with debugging and optimizing performance for seamless user experiences."  
   },
-  
+
   {
     title: "Military Service – Software Development Role",
     company: "Hellenic Army | KEPYES",
